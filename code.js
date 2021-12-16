@@ -13,10 +13,36 @@
 //     } else return "Hello, " + input + "!";
 //     }
 
-function isFive(num) {
-    if (num === 5) {
+// function isFive(num) {
+//     if (num === 5) {
+//         return true;
+//     }else {
+//         return false;
+//     }
+// }
+
+// function isEven(num) {
+//     if(num === 3) {
+//         return false;
+//     }else if (num === "banana") {
+//         return false;
+//     }else if (num === Infinity) {
+//         return false;
+//     } else if (num === true) {
+//         return false;
+//     }else if (num === undefined) {
+//         return false;
+//     }else {
+//         return true;
+//     }
+// }
+
+function isEven(num) {
+    if (num % 2 === 0) {
         return true;
-    }else {
+    } else {
         return false;
     }
 }
+
+// console.log(typeof infinity);

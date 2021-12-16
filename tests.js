@@ -48,24 +48,67 @@
 //
 // });
 
-describe("isFive", function (){
+// describe("isFive", function (){
+//     it('should be a defined function', function () {
+//         expect(typeof isFive).toBe("function");
+//
+//     });
+//     it('should should return a boolean of true or fals', function () {
+//         expect(typeof isFive()).toBe("boolean");
+//
+//     });
+//     it('should return true when passed 5', function () {
+//         expect(isFive(5)).toBe(true);
+//
+//     });
+//     it('should return false if the input is a string', function () {
+//         expect(isFive("5")).toBe(false);
+//
+//     });
+// })
+
+describe("isEven", function () {
     it('should be a defined function', function () {
-        expect(typeof isFive).toBe("function");
+        expect(typeof isEven).toBe("function");
 
     });
-    it('should should return a boolean of true or fals', function () {
-        expect(typeof isFive()).toBe("boolean");
+    it('should always return a boolean', function () {
+        expect(typeof isEven()).toBe("boolean");
 
     });
-    it('should return true when passed 5', function () {
-        expect(isFive(5)).toBe(true);
+    it('should return true when the input is 2', function () {
+        expect(isEven(2)).toBe(true);
 
     });
-    it('should return false if the input is a string', function () {
-        expect(isFive("5")).toBe(false);
+    it('should return true when the input is -4', function () {
+        expect(isEven(-4)).toBe(true);
 
     });
-})
+    it('should return false when the input is 3', function () {
+        expect(isEven(3)).toBe(false);
+
+    });
+    it('should return false when the input is banana', function () {
+        expect(isEven("banana")).toBe(false);
+
+    });
+    it('should return true when the input is 8', function () {
+        expect(isEven(8)).toBe(true);
+
+    });
+    it('should return false when the input is Infinity', function () {
+        expect(isEven(Infinity)).toBe(false);
+
+    });
+    it('should return false when input is a boolean', function () {
+        expect(isEven(true)).toBe(false);
+
+    });
+    it('should return false when not given an input', function () {
+        expect(isEven()).toBe(false);
+
+    });
+});
 
 
 
